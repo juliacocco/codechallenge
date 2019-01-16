@@ -1,0 +1,53 @@
+.wrapper {
+  display: table;
+  width: auto;
+  background-color: #eee;
+  border: 0.5px solid lightgray;
+  border-spacing: 5px;
+}
+
+.common_table {
+  width: 320px;
+  padding: 10px;
+  background-color: white;
+  border: 0.5px solid lightgray;
+  margin: 0;
+}
+
+.submit {
+  background-color: #323232;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 0.5px;
+  color: white;
+}
+
+.cancel {
+  background-color: #7E7E7E;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 0.5px;
+  color: white;
+}
+
+.list_add {
+
+
+ }
+
+ .list_cancel:before {
+  content: '\2716';
+  color: white;
+  border: 0.5px solid lightgray;
+  padding: 1px 4px;
+  font-size: 15px;
+  background-color: #7E7E7E;
+  /*color: #fff;*/
+  font-weight: 300;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
