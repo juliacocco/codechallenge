@@ -1,4 +1,7 @@
 .wrapper {
+  position:absolute;
+  top:25%;
+  left:25%;
   display: table;
   width: auto;
   background-color: #eee;
@@ -7,6 +10,7 @@
 }
 
 .common_table {
+  position: relative;
   width: 320px;
   padding: 10px;
   background-color: white;
@@ -20,6 +24,7 @@
   border-radius: 3px;
   border-width: 0.5px;
   color: white;
+  padding: 4px 7px;
 }
 
 .cancel {
@@ -28,21 +33,39 @@
   border-radius: 3px;
   border-width: 0.5px;
   color: white;
+  padding: 4px 5px;
 }
 
-.list_add {
+.action_btn {
+ text-align: center;
+}
 
+.popup {
+  background-color: #00FF7F;
+  color: black;
+  border-radius: 9px;
+  border: 0.5px solid #00FF7F;
+  text-align: center;
+  margin: 10px 300px;
 
- }
+}
 
- .list_cancel:before {
+.list_add:before {
+  content:"\002b";
+  color: white;
+  border: 0.5px solid lightgray;
+  padding: 0px 3px;
+  font-size: 14px;
+  background-color: #7E7E7E;
+}
+
+.list_cancel:before {
   content: '\2716';
   color: white;
   border: 0.5px solid lightgray;
   padding: 1px 4px;
   font-size: 15px;
   background-color: #7E7E7E;
-  /*color: #fff;*/
   font-weight: 300;
 }
 
