@@ -1,12 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONT PATH
+* -------------------------- */
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style : normal;
+         src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
+         src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),
+               url("http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+               url("http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+               url("http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
+               url("http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
 .wrapper {
-  position:absolute;
-  top:25%;
-  left:25%;
   display: table;
   width: auto;
   background-color: #eee;
-  border: 0.5px solid lightgray;
   border-spacing: 5px;
+  padding: 10px;
 }
 
 .common_table {
@@ -14,26 +42,57 @@
   width: 320px;
   padding: 10px;
   background-color: white;
-  border: 0.5px solid lightgray;
-  margin: 0;
+  border: .5px solid lightgray;
+  margin-bottom: 1rem;
 }
+
+th {
+  text-align: left;
+}
+
+input[type=text]{
+  padding: 4px 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+select {
+  height: 25px;
+}
+
+input[type=submit]{
+  padding: .5rem 1.5rem;
+  margin: .5rem 0;
+  box-sizing: border-box;
+  color: white;
+  border-width: 0.5px;
+  border-radius: 6px;
+}
+
 
 .submit {
   background-color: #323232;
-  border-style: solid;
-  border-radius: 3px;
-  border-width: 0.5px;
-  color: white;
-  padding: 4px 7px;
 }
 
 .cancel {
   background-color: #7E7E7E;
-  border-style: solid;
-  border-radius: 3px;
-  border-width: 0.5px;
-  color: white;
-  padding: 4px 5px;
+}
+
+.list_add {
+  margin: 10px;
+}
+
+.list_add:before {
+  font-family: FontAwesome;
+  content: "\f0fe";
+  color: #666;
+  margin-right: 5px;
+ }
+
+ .list_cancel:before {
+  font-family: FontAwesome;
+  content: "\f2d3";
+  color: #666;
 }
 
 .action_btn {
@@ -41,36 +100,12 @@
 }
 
 .popup {
-  background-color: #00FF7F;
   color: black;
   border-radius: 9px;
-  border: 0.5px solid #00FF7F;
+  border: .5px solid #00FF7F;
+  background-color: #8EF1A0;
   text-align: center;
-  margin: 10px 300px;
-
-}
-
-.list_add:before {
-  content:"\002b";
-  color: white;
-  border: 0.5px solid lightgray;
-  padding: 0px 3px;
-  font-size: 14px;
-  background-color: #7E7E7E;
-}
-
-.list_cancel:before {
-  content: '\2716';
-  color: white;
-  border: 0.5px solid lightgray;
-  padding: 1px 4px;
-  font-size: 15px;
-  background-color: #7E7E7E;
-  font-weight: 300;
-}
-
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: none;
+  width: 30%;
+  padding: 10px;
+  margin: 16px auto;
 }
