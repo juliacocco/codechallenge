@@ -8,10 +8,13 @@ $( document ).ready(function() {
 
     $(".list_cancel").click(function(){
       console.log('remove');
-      $("tbody .template_row:has(td)").click(function() {
-        $(this).closest('tr').remove()
+    $("tbody .template_row:has(td)").click(function() {
+      $(this).closest('tr').remove()
     });
     });
+
+  jQuery(".popup").hide();
+  jQuery(".action_btn.submit").click (function(){ jQuery(".popup").show(); });
 
 });
 
